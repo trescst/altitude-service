@@ -1,8 +1,9 @@
 # Prerequisites
 
-- `vi /usr/local/bin/git-push-wh
+- `vi /usr/local/bin/git-push-wh`
 
-```#!/bin/sh
+```
+#!/bin/sh
 
 GIT_DIR_="$(git rev-parse --git-dir)"
 BRANCH="$(git rev-parse --symbolic --abbrev-ref $(git symbolic-ref HEAD))"
@@ -19,16 +20,17 @@ test $? -eq 0 && test -x "$POST_PUSH" &&
     exec "$POST_PUSH" "$BRANCH" "$@"
 ```
 
-- `chmod +x /usr/local/bin/git-push-wh
+- `chmod +x /usr/local/bin/git-push-wh`
 
-- `vi /path/to/repo/.git/hooks/post-push
+- `vi /path/to/repo/.git/hooks/post-push`
 
-```#!/bin/bash
+```
+#!/bin/bash
 curl -X POST --insecure https://complete.webhook.url/with/path/and/key/and/???
 ```
 
-- ` chmod +x /path/to/repo/.git/hooks/post-push
+- `chmod +x /path/to/repo/.git/hooks/post-push`
 
 # Usage
 
-`git push-wh origin master
+`git push-wh origin master`
