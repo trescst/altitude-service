@@ -4,8 +4,16 @@
  * variables
  */
 
-$altitude = 2.5;
+$altitude = 0.0;
 $hostname = gethostname();
+
+/*
+ * check $altitude, die if 0.0
+ */
+if ($altitude == 0.0)
+{
+    die("[ERROR] altitude cannot be 0.0");
+}
 
 /*
  * building the json payload
