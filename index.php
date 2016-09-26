@@ -14,7 +14,7 @@ if ($altitude == 0.0)
 {
     $error = "[ERROR] altitude cannot be 0.0";
     error_log($error, 0);
-    die($error");
+    die($error);
 }
 
 /*
