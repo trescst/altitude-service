@@ -4,7 +4,7 @@
  * variables
  */
 
-$altitude = 2.50;
+$altitude = 1.00;
 $hostname = gethostname();
 
 /*
