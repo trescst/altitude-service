@@ -1,10 +1,12 @@
 <?php
 
+$ini = parse_ini_file('config.ini');
+
 /*
  * variables
  */
 
-$altitude = 2.5;
+$altitude = $ini['altitude'];
 $hostname = gethostname();
 
 /*
