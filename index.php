@@ -39,5 +39,4 @@ $json = json_encode($array);
  */
 
 header('Content-Type: application/json');
-#echo $json; 
-echo $altitude;
+echo $json; 
